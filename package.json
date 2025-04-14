@@ -1,5 +1,5 @@
 {
-  "version": "1.1.19",
+  "version": "1.1.20",
   "description": "A Component Library",
   "scripts": {
     "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
