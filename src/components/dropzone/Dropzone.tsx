@@ -36,6 +36,7 @@ const Dropzone = ({ onDrop = () => {}, maxFiles = 10, onError = () => {}, label 
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop: handleDrop,
+    multiple: maxFiles > 1,
   });
 
   return (
