@@ -55,7 +55,7 @@ describe("Input component", () => {
     };
     render(<Input customStyles={customStyles} />);
     const input = screen.getByTestId("input");
-    expect(input).toHaveStyle("border-color: blue");
+    expect(input).toHaveStyle("border-color: rgb(0, 0, 255)");
   });
 
   it("Input should render help text", () => {
