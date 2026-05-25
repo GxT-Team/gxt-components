@@ -12,6 +12,7 @@ permissions:
 
 jobs:
   publish-gpr:
+    if: github.repository_owner == 'GxT-Team'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,7 +23,7 @@ jobs:
         with:
           node-version: latest
           registry-url: https://npm.pkg.github.com/
-          scope: "@nelsondev19"
+          scope: "@gxt-team"
           cache: pnpm
       - run: |
           git config --global user.email "github-actions@github.com"

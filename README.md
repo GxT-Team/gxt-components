@@ -3,7 +3,7 @@ GxT's Official Components Library
 
 ## Installation
 ```bash
-npm install github:nelsondev19/gxt-components
+npm install github:GxT-Team/gxt-components
 ```
 
 ## Usage
