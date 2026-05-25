@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "target": "ES2022", // Specifies the JavaScript version to target when transpiling code.
+    "target": "ES5", // Specifies the JavaScript version to target when transpiling code.
     "useDefineForClassFields": true, // Enables the use of 'define' for class fields.
-    "lib": ["ES2020", "DOM", "DOM.Iterable"], // Specifies the libraries available for the code.
+    "lib": ["ES2022", "DOM", "DOM.Iterable"], // Specifies the libraries available for the code.
     "module": "ESNext", // Defines the module system to use for code generation.
     "skipLibCheck": true, // Skips type checking of declaration files.
     "types": ["vitest/globals", "react", "css-modules", "vite/client"], // Specifies the types to include in the compilation.
 
     /* Bundler mode */
-    "moduleResolution": "bundler", // Specifies how modules are resolved when bundling.
+    "moduleResolution": "node", // Specifies how modules are resolved when bundling.
     "allowSyntheticDefaultImports": true,
     "allowImportingTsExtensions": true, // Allows importing TypeScript files with extensions.
     "resolveJsonModule": true, // Enables importing JSON modules.
