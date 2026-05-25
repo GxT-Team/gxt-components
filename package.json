@@ -2,15 +2,17 @@
   "version": "1.1.20",
   "description": "A Component Library",
   "scripts": {
-    "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
-    "lint": "ESLINT_USE_FLAT_CONFIG=false eslint . --ext .ts,.tsx --ignore-path .gitignore --fix",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check .",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
     "build": "tsc && vite build",
     "test": "vitest run",
     "test-watch": "vitest",
     "test:ui": "vitest --ui",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "prepare": "npm run build"
+    "prepare": "pnpm run build"
   },
   "keywords": [],
   "author": "",
@@ -30,20 +32,13 @@
     "@types/css-modules": "1.0.5",
     "@types/react": "18.3.29",
     "@types/react-paginate": "7.1.4",
-    "@typescript-eslint/eslint-plugin": "8.59.4",
-    "@typescript-eslint/parser": "8.59.4",
     "@vitest/coverage-v8": "4.1.7",
-    "eslint": "9.39.4",
-    "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-prettier": "5.5.5",
-    "eslint-plugin-react": "7.37.5",
-    "eslint-plugin-react-hooks": "7.1.1",
-    "eslint-plugin-storybook": "0.12.0",
     "husky": "9.1.7",
     "jest-styled-components": "7.4.0",
     "jsdom": "29.1.1",
     "lint-staged": "17.0.5",
-    "prettier": "3.8.3",
+    "oxfmt": "0.51.0",
+    "oxlint": "1.66.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-test-renderer": "18.3.1",
@@ -73,10 +68,10 @@
     "/dist"
   ],
   "lint-staged": {
-    "*.{ts,tsx}": [
-      "npm run format",
-      "npm run lint",
-      "npm run test"
+    "*.{ts,tsx,js,jsx,json,jsonc,md,mdx,css,scss,yml,yaml}": [
+      "pnpm run format",
+      "pnpm run lint:fix",
+      "pnpm run test"
     ]
   },
   "publishConfig": {
@@ -87,5 +82,6 @@
     "react-dropzone": "15.0.0",
     "react-paginate": "8.3.0",
     "vite-plugin-svgr": "5.2.0"
-  }
+  },
+  "packageManager": "pnpm@10.33.3"
 }

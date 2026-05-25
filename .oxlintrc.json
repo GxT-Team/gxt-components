@@ -1,0 +1,26 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "env": {
+    "browser": true,
+    "es2022": true,
+    "node": true,
+    "vitest": true
+  },
+  "plugins": ["react", "typescript", "vitest"],
+  "settings": {
+    "react": {
+      "version": "18.3.1"
+    }
+  },
+  "ignorePatterns": [
+    "coverage/**",
+    "dist/**",
+    "node_modules/**",
+    "storybook-static/**"
+  ],
+  "rules": {
+    "react/prop-types": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "typescript/no-explicit-any": "warn"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "$schema": "./node_modules/oxfmt/schema.json",
+  "printWidth": 80,
+  "tabWidth": 2
+}
