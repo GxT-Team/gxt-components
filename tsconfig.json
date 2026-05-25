@@ -2,11 +2,10 @@
   "compilerOptions": {
     "target": "ES5", // Specifies the JavaScript version to target when transpiling code.
     "useDefineForClassFields": true, // Enables the use of 'define' for class fields.
-    "lib": ["ES2020", "DOM", "DOM.Iterable"], // Specifies the libraries available for the code.
+    "lib": ["ES2022", "DOM", "DOM.Iterable"], // Specifies the libraries available for the code.
     "module": "ESNext", // Defines the module system to use for code generation.
     "skipLibCheck": true, // Skips type checking of declaration files.
     "types": ["vitest/globals", "react", "css-modules", "vite/client"], // Specifies the types to include in the compilation.
-    "ignoreDeprecations": "6.0", // Keeps the current compile target/resolution behavior under TypeScript 6.
 
     /* Bundler mode */
     "moduleResolution": "node", // Specifies how modules are resolved when bundling.

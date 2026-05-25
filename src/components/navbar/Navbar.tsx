@@ -49,7 +49,7 @@ const Navbar: FC<NavbarProps> = ({
   const [isExpanded, setIsExpanded] = useState(false);
   const [isTimeOutExpanded, setIsTimeOutExpanded] = useState(false);
 
-  const timeoutId = useRef<NodeJS.Timeout>();
+  const timeoutId = useRef<ReturnType<typeof setTimeout>>();
 
   const handleMouseEnter = () => setIsTimeOutExpanded(true);
 
