@@ -1,13 +1,50 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Navitem component > applies correct icon color when link is active 1`] = `
+exports[`Navitem component > applies active styles when link is active 1`] = `
 <DocumentFragment>
-  <div
+  .c1 {
+  display: flex;
+  width: 15.75rem;
+  padding: 0.5rem 0.75rem;
+  align-items: center;
+  gap: 0.75rem;
+  border-left: solid;
+  border-left-width: 0.25rem;
+  border-left-color: var(--primary-200, #177ba6);
+}
+
+.c0 {
+  text-decoration: none;
+}
+
+.c2 {
+  display: flex;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.c3 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.00119rem;
+  margin: 0;
+  transition: opacity 0.5s ease-in-out,visibility 0.5s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  color: var(--primary-200, #177BA6);
+}
+
+<div
     data-testid="Home-navlink"
   >
     <a
       aria-current="page"
-      class="sc-gtcBCx loUDii active"
+      class="c0 active"
       data-discover="true"
       data-testid="Home"
       data-tooltip-content="Home"
@@ -15,10 +52,10 @@ exports[`Navitem component > applies correct icon color when link is active 1`] 
       href="/home"
     >
       <div
-        class="sc-bdDsCe iWngPQ"
+        class="c1"
       >
         <div
-          class="sc-dkXsAU bkqkcD"
+          class="c2"
         >
           <svg
             data-testid="mock-icon"
@@ -27,7 +64,81 @@ exports[`Navitem component > applies correct icon color when link is active 1`] 
           />
         </div>
         <p
-          class="sc-hKVpXn kLOHKk"
+          class="c3"
+        >
+          Home
+        </p>
+      </div>
+    </a>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Navitem component > applies correct icon color when link is active 1`] = `
+<DocumentFragment>
+  .c1 {
+  display: flex;
+  width: 15.75rem;
+  padding: 0.5rem 0.75rem;
+  align-items: center;
+  gap: 0.75rem;
+  border-left: solid;
+  border-left-width: 0.25rem;
+  border-left-color: var(--primary-200, #177ba6);
+}
+
+.c0 {
+  text-decoration: none;
+}
+
+.c2 {
+  display: flex;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.c3 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.00119rem;
+  margin: 0;
+  transition: opacity 0.5s ease-in-out,visibility 0.5s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  color: var(--primary-200, #177BA6);
+}
+
+<div
+    data-testid="Home-navlink"
+  >
+    <a
+      aria-current="page"
+      class="c0 active"
+      data-discover="true"
+      data-testid="Home"
+      data-tooltip-content="Home"
+      data-tooltip-id="navlink"
+      href="/home"
+    >
+      <div
+        class="c1"
+      >
+        <div
+          class="c2"
+        >
+          <svg
+            data-testid="mock-icon"
+            fill="var(--primary-200, #177BA6)"
+            stroke="var(--primary-200, #177BA6)"
+          />
+        </div>
+        <p
+          class="c3"
         >
           Home
         </p>
@@ -39,11 +150,45 @@ exports[`Navitem component > applies correct icon color when link is active 1`] 
 
 exports[`Navitem component > applies correct icon color when link is not active 1`] = `
 <DocumentFragment>
-  <div
+  .c1 {
+  display: flex;
+  width: 15.75rem;
+  padding: 0.5rem 0.75rem;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.c0 {
+  text-decoration: none;
+}
+
+.c2 {
+  display: flex;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.c3 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.00119rem;
+  margin: 0;
+  transition: opacity 0.5s ease-in-out,visibility 0.5s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  color: var(--neutral-400, #414141);
+}
+
+<div
     data-testid="Home-navlink"
   >
     <a
-      class="sc-gtcBCx loUDii"
+      class="c0"
       data-discover="true"
       data-testid="Home"
       data-tooltip-content="Home"
@@ -51,17 +196,17 @@ exports[`Navitem component > applies correct icon color when link is not active 
       href="/home"
     >
       <div
-        class="sc-bdDsCe hyrtou"
+        class="c1"
       >
         <div
-          class="sc-dkXsAU bkqkcD"
+          class="c2"
         >
           <svg
             data-testid="mock-icon"
           />
         </div>
         <p
-          class="sc-hKVpXn ejjrDG"
+          class="c3"
         >
           Home
         </p>
@@ -73,11 +218,45 @@ exports[`Navitem component > applies correct icon color when link is not active 
 
 exports[`Navitem component > does not apply active styles when link is not active 1`] = `
 <DocumentFragment>
-  <div
+  .c1 {
+  display: flex;
+  width: 15.75rem;
+  padding: 0.5rem 0.75rem;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.c0 {
+  text-decoration: none;
+}
+
+.c2 {
+  display: flex;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.c3 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.00119rem;
+  margin: 0;
+  transition: opacity 0.5s ease-in-out,visibility 0.5s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  color: var(--neutral-400, #414141);
+}
+
+<div
     data-testid="Home-navlink"
   >
     <a
-      class="sc-gtcBCx loUDii"
+      class="c0"
       data-discover="true"
       data-testid="Home"
       data-tooltip-content="Home"
@@ -85,17 +264,17 @@ exports[`Navitem component > does not apply active styles when link is not activ
       href="/home"
     >
       <div
-        class="sc-bdDsCe hyrtou"
+        class="c1"
       >
         <div
-          class="sc-dkXsAU bkqkcD"
+          class="c2"
         >
           <svg
             data-testid="mock-icon"
           />
         </div>
         <p
-          class="sc-hKVpXn ejjrDG"
+          class="c3"
         >
           Home
         </p>
@@ -107,11 +286,48 @@ exports[`Navitem component > does not apply active styles when link is not activ
 
 exports[`Navitem component > does not render expanded text when isExpanded is false 1`] = `
 <DocumentFragment>
-  <div
+  .c1 {
+  display: flex;
+  width: 15.75rem;
+  padding: 0.5rem 0.75rem;
+  align-items: center;
+  gap: 0.75rem;
+  border-left: solid;
+  border-left-width: 0.25rem;
+  border-left-color: var(--primary-200, #177ba6);
+}
+
+.c0 {
+  text-decoration: none;
+}
+
+.c2 {
+  display: flex;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.c3 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.00119rem;
+  margin: 0;
+  transition: opacity 0.5s ease-in-out,visibility 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  color: var(--primary-200, #177BA6);
+}
+
+<div
     data-testid="Home-navlink"
   >
     <a
-      class="sc-gtcBCx loUDii"
+      class="c0"
       data-discover="true"
       data-testid="Home"
       data-tooltip-content="Home"
@@ -119,10 +335,10 @@ exports[`Navitem component > does not render expanded text when isExpanded is fa
       href="/home"
     >
       <div
-        class="sc-bdDsCe iWngPQ"
+        class="c1"
       >
         <div
-          class="sc-dkXsAU bkqkcD"
+          class="c2"
         >
           <svg
             data-testid="mock-icon"
@@ -131,7 +347,7 @@ exports[`Navitem component > does not render expanded text when isExpanded is fa
           />
         </div>
         <p
-          class="sc-hKVpXn jTciuF"
+          class="c3"
         >
           Home
         </p>
@@ -143,11 +359,48 @@ exports[`Navitem component > does not render expanded text when isExpanded is fa
 
 exports[`Navitem component > does not render icon when not provided 1`] = `
 <DocumentFragment>
-  <div
+  .c1 {
+  display: flex;
+  width: 15.75rem;
+  padding: 0.5rem 0.75rem;
+  align-items: center;
+  gap: 0.75rem;
+  border-left: solid;
+  border-left-width: 0.25rem;
+  border-left-color: var(--primary-200, #177ba6);
+}
+
+.c0 {
+  text-decoration: none;
+}
+
+.c2 {
+  display: flex;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.c3 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.00119rem;
+  margin: 0;
+  transition: opacity 0.5s ease-in-out,visibility 0.5s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  color: var(--primary-200, #177BA6);
+}
+
+<div
     data-testid="Home-navlink"
   >
     <a
-      class="sc-gtcBCx loUDii"
+      class="c0"
       data-discover="true"
       data-testid="Home"
       data-tooltip-content="Home"
@@ -155,13 +408,13 @@ exports[`Navitem component > does not render icon when not provided 1`] = `
       href="/home"
     >
       <div
-        class="sc-bdDsCe iWngPQ"
+        class="c1"
       >
         <div
-          class="sc-dkXsAU bkqkcD"
+          class="c2"
         />
         <p
-          class="sc-hKVpXn kLOHKk"
+          class="c3"
         >
           Home
         </p>
@@ -173,11 +426,48 @@ exports[`Navitem component > does not render icon when not provided 1`] = `
 
 exports[`Navitem component > renders expanded text when isExpanded is true 1`] = `
 <DocumentFragment>
-  <div
+  .c1 {
+  display: flex;
+  width: 15.75rem;
+  padding: 0.5rem 0.75rem;
+  align-items: center;
+  gap: 0.75rem;
+  border-left: solid;
+  border-left-width: 0.25rem;
+  border-left-color: var(--primary-200, #177ba6);
+}
+
+.c0 {
+  text-decoration: none;
+}
+
+.c2 {
+  display: flex;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.c3 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.00119rem;
+  margin: 0;
+  transition: opacity 0.5s ease-in-out,visibility 0.5s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  color: var(--primary-200, #177BA6);
+}
+
+<div
     data-testid="Home-navlink"
   >
     <a
-      class="sc-gtcBCx loUDii"
+      class="c0"
       data-discover="true"
       data-testid="Home"
       data-tooltip-content="Home"
@@ -185,10 +475,10 @@ exports[`Navitem component > renders expanded text when isExpanded is true 1`] =
       href="/home"
     >
       <div
-        class="sc-bdDsCe iWngPQ"
+        class="c1"
       >
         <div
-          class="sc-dkXsAU bkqkcD"
+          class="c2"
         >
           <svg
             data-testid="mock-icon"
@@ -197,7 +487,7 @@ exports[`Navitem component > renders expanded text when isExpanded is true 1`] =
           />
         </div>
         <p
-          class="sc-hKVpXn kLOHKk"
+          class="c3"
         >
           Home
         </p>
@@ -209,11 +499,48 @@ exports[`Navitem component > renders expanded text when isExpanded is true 1`] =
 
 exports[`Navitem component > renders icon when provided 1`] = `
 <DocumentFragment>
-  <div
+  .c1 {
+  display: flex;
+  width: 15.75rem;
+  padding: 0.5rem 0.75rem;
+  align-items: center;
+  gap: 0.75rem;
+  border-left: solid;
+  border-left-width: 0.25rem;
+  border-left-color: var(--primary-200, #177ba6);
+}
+
+.c0 {
+  text-decoration: none;
+}
+
+.c2 {
+  display: flex;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.c3 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.00119rem;
+  margin: 0;
+  transition: opacity 0.5s ease-in-out,visibility 0.5s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  color: var(--primary-200, #177BA6);
+}
+
+<div
     data-testid="Home-navlink"
   >
     <a
-      class="sc-gtcBCx loUDii"
+      class="c0"
       data-discover="true"
       data-testid="Home"
       data-tooltip-content="Home"
@@ -221,10 +548,10 @@ exports[`Navitem component > renders icon when provided 1`] = `
       href="/home"
     >
       <div
-        class="sc-bdDsCe iWngPQ"
+        class="c1"
       >
         <div
-          class="sc-dkXsAU bkqkcD"
+          class="c2"
         >
           <svg
             data-testid="mock-icon"
@@ -233,7 +560,7 @@ exports[`Navitem component > renders icon when provided 1`] = `
           />
         </div>
         <p
-          class="sc-hKVpXn kLOHKk"
+          class="c3"
         >
           Home
         </p>
@@ -245,11 +572,48 @@ exports[`Navitem component > renders icon when provided 1`] = `
 
 exports[`Navitem component > renders with correct text 1`] = `
 <DocumentFragment>
-  <div
+  .c1 {
+  display: flex;
+  width: 15.75rem;
+  padding: 0.5rem 0.75rem;
+  align-items: center;
+  gap: 0.75rem;
+  border-left: solid;
+  border-left-width: 0.25rem;
+  border-left-color: var(--primary-200, #177ba6);
+}
+
+.c0 {
+  text-decoration: none;
+}
+
+.c2 {
+  display: flex;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.c3 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.00119rem;
+  margin: 0;
+  transition: opacity 0.5s ease-in-out,visibility 0.5s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  color: var(--primary-200, #177BA6);
+}
+
+<div
     data-testid="Home-navlink"
   >
     <a
-      class="sc-gtcBCx loUDii"
+      class="c0"
       data-discover="true"
       data-testid="Home"
       data-tooltip-content="Home"
@@ -257,10 +621,10 @@ exports[`Navitem component > renders with correct text 1`] = `
       href="/home"
     >
       <div
-        class="sc-bdDsCe iWngPQ"
+        class="c1"
       >
         <div
-          class="sc-dkXsAU bkqkcD"
+          class="c2"
         >
           <svg
             data-testid="mock-icon"
@@ -269,7 +633,7 @@ exports[`Navitem component > renders with correct text 1`] = `
           />
         </div>
         <p
-          class="sc-hKVpXn kLOHKk"
+          class="c3"
         >
           Home
         </p>
@@ -281,11 +645,48 @@ exports[`Navitem component > renders with correct text 1`] = `
 
 exports[`Navitem component > renders without crashing 1`] = `
 <DocumentFragment>
-  <div
+  .c1 {
+  display: flex;
+  width: 15.75rem;
+  padding: 0.5rem 0.75rem;
+  align-items: center;
+  gap: 0.75rem;
+  border-left: solid;
+  border-left-width: 0.25rem;
+  border-left-color: var(--primary-200, #177ba6);
+}
+
+.c0 {
+  text-decoration: none;
+}
+
+.c2 {
+  display: flex;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.c3 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.00119rem;
+  margin: 0;
+  transition: opacity 0.5s ease-in-out,visibility 0.5s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+  color: var(--primary-200, #177BA6);
+}
+
+<div
     data-testid="Home-navlink"
   >
     <a
-      class="sc-gtcBCx loUDii"
+      class="c0"
       data-discover="true"
       data-testid="Home"
       data-tooltip-content="Home"
@@ -293,10 +694,10 @@ exports[`Navitem component > renders without crashing 1`] = `
       href="/home"
     >
       <div
-        class="sc-bdDsCe iWngPQ"
+        class="c1"
       >
         <div
-          class="sc-dkXsAU bkqkcD"
+          class="c2"
         >
           <svg
             data-testid="mock-icon"
@@ -305,7 +706,7 @@ exports[`Navitem component > renders without crashing 1`] = `
           />
         </div>
         <p
-          class="sc-hKVpXn kLOHKk"
+          class="c3"
         >
           Home
         </p>
