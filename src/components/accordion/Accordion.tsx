@@ -50,13 +50,13 @@ const AccordionContent = function ContentComponent({
   searchText = "",
   ...rest
 }: AccordionContentProps) {
-  const filteredChildren = React.Children.toArray(children).filter((child) => {
-    if (!React.isValidElement<{ label?: string }>(child)) {
-      return false;
-    }
-
-    return child.props.label?.toLowerCase().includes(searchText.toLowerCase());
-  });
+  const filteredChildren = React.Children.toArray(children).filter(
+    (child: any) => {
+      return child.props?.label
+        ?.toLowerCase()
+        .includes(searchText.toLowerCase());
+    },
+  );
 
   return (
     <Content open={!!isOpen} {...rest}>
@@ -127,7 +127,7 @@ Accordion.Content = AccordionContent;
 export default Accordion;
 
 Accordion.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired as React.Validator<React.ReactNode>,
   isSearchAble: PropTypes.bool,
   isAccordionOpen: PropTypes.bool,
 };

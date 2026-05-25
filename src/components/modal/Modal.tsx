@@ -70,7 +70,7 @@ Modal.ModalFooter = StyledModalFooter;
 export default Modal;
 
 Modal.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired as React.Validator<React.ReactNode>,
   overlayBackground: PropTypes.string,
   overlay: PropTypes.bool,
   maxWidth: PropTypes.string,
