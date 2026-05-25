@@ -8,6 +8,7 @@ on:
 permissions:
   contents: write
   packages: write
+  id-token: write
 
 jobs:
   publish-gpr:
@@ -21,7 +22,7 @@ jobs:
         with:
           node-version: latest
           registry-url: https://npm.pkg.github.com/
-          scope: "@GxT-Team"
+          scope: "@nelsondev19"
           cache: pnpm
       - run: |
           git config --global user.email "github-actions@github.com"
