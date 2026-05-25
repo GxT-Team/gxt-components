@@ -1,6 +1,7 @@
 import React from "react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
+import "jest-styled-components";
 import Tabs from "../Tabs";
 import { TabProps } from "../../tab/Tab";
 
@@ -70,10 +71,10 @@ describe("Tabs Component", () => {
     render(<Tabs tabs={tabProps} />);
     const activeTabElement = screen.getByText("Tab 1");
 
-    expect(activeTabElement).toHaveStyle(`
-
-      border-bottom: 2px solid var(--primary-200, #177ba6);
-    `);
+    expect(activeTabElement).toHaveStyleRule(
+      "border-bottom",
+      "2px solid var(--primary-200,#177ba6)",
+    );
   });
 
   it("applies inactive styles to non-active tabs", () => {
