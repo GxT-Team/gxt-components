@@ -130,7 +130,9 @@ const Dropdown = <T,>({
   };
 
   const handleItemClick = (item: DropDownOption<T>) => {
-    onSelect && onSelect(item);
+    if (onSelect) {
+      onSelect(item);
+    }
     if (type === "select") {
       setSelectedOption(item);
     }

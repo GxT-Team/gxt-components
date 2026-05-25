@@ -39,7 +39,7 @@ export const NavitemComponent: Story = {
   args: {
     navigateTo: "/",
     text: "Search",
-    Icon: CustomIcon as React.ComponentType<any> | undefined,
+    Icon: CustomIcon as React.ComponentType<React.SVGProps<SVGSVGElement>>,
     isExpanded: true,
     isLinkActive: () => false,
   },

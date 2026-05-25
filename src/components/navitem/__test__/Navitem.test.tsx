@@ -5,7 +5,9 @@ import Navitem, { NavItemProps } from "../Navitem";
 import { describe, expect, it, vi } from "vitest";
 import "jest-styled-components";
 
-const MockIcon = (props: any) => <svg {...props} data-testid="mock-icon" />;
+const MockIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg {...props} data-testid="mock-icon" />
+);
 
 const mockOnClickHandler = vi.fn();
 

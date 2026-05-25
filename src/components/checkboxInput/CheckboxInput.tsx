@@ -3,8 +3,7 @@ import styled from "styled-components";
 import checkedIcon from "../../assets/images/check-icon.png";
 import indeterminateCheckedIcon from "../../assets/images/indeterminate-checked.png";
 
-export interface CheckboxInputProps
-  extends InputHTMLAttributes<HTMLInputElement> {
+export interface CheckboxInputProps extends InputHTMLAttributes<HTMLInputElement> {
   $inputSize?: "xs" | "small" | "medium" | "large";
   label?: string;
   indeterminate?: boolean;

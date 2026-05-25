@@ -5,9 +5,8 @@ import {
   DropzoneMessage,
   DropzoneWrapper,
 } from "./Dropzone.styles";
-import UploadFileSvg from '../../assets/icons/uploadFile.svg'
+import UploadFileSvg from "../../assets/icons/uploadFile.svg";
 import { FunctionComponent, SVGProps } from "react";
-
 
 export type DropzoneProps = {
   onDrop?: (acceptedFiles: File[]) => void;
@@ -16,7 +15,9 @@ export type DropzoneProps = {
   label?: string;
 };
 
-const UploadFileIcon: FunctionComponent<SVGProps<SVGSVGElement>> = ({ stroke }) => (
+const UploadFileIcon: FunctionComponent<SVGProps<SVGSVGElement>> = ({
+  stroke,
+}) => (
   <UploadFileSvg
     width={30}
     height={30}
@@ -25,7 +26,12 @@ const UploadFileIcon: FunctionComponent<SVGProps<SVGSVGElement>> = ({ stroke }) 
   />
 );
 
-const Dropzone = ({ onDrop = () => {}, maxFiles = 10, onError = () => {}, label = '' }: DropzoneProps) => {
+const Dropzone = ({
+  onDrop = () => {},
+  maxFiles = 10,
+  onError = () => {},
+  label = "",
+}: DropzoneProps) => {
   const handleDrop = (acceptedFiles: File[]) => {
     if (acceptedFiles.length > maxFiles) {
       onError(`You can only upload ${maxFiles} files`);
@@ -40,22 +46,20 @@ const Dropzone = ({ onDrop = () => {}, maxFiles = 10, onError = () => {}, label 
   });
 
   return (
-      <DropzoneWrapper {...getRootProps()} data-testid="dropzone">
-        <input {...getInputProps()} />
-        <DropzoneLabel>
-          {isDragActive ? (
-            <DropzoneMessage>Drop here ...</DropzoneMessage>
-          ) : (
-            <>
-              <UploadFileIcon />
-              <DropzoneMessage>
-                { label || "Drag and Drop Files"}
-              </DropzoneMessage>
-              <Button variant="secondary">or Browse</Button>
-            </>
-          )}
-        </DropzoneLabel>
-      </DropzoneWrapper>
+    <DropzoneWrapper {...getRootProps()} data-testid="dropzone">
+      <input {...getInputProps()} />
+      <DropzoneLabel>
+        {isDragActive ? (
+          <DropzoneMessage>Drop here ...</DropzoneMessage>
+        ) : (
+          <>
+            <UploadFileIcon />
+            <DropzoneMessage>{label || "Drag and Drop Files"}</DropzoneMessage>
+            <Button variant="secondary">or Browse</Button>
+          </>
+        )}
+      </DropzoneLabel>
+    </DropzoneWrapper>
   );
 };
 export default Dropzone;

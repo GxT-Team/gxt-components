@@ -7,8 +7,7 @@ import {
   TextAreaInput,
 } from "./TextArea.styles";
 
-export interface TextAreaProps
-  extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
+export interface TextAreaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
   id?: string;
   name?: string;
   heading?: string;

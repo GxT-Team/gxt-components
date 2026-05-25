@@ -2,8 +2,7 @@ import React, { ChangeEvent, useState, useEffect } from "react";
 import styled from "styled-components";
 import SearchIcon from "../../assets/icons/search.svg";
 
-export interface SearchProps
-  extends React.InputHTMLAttributes<HTMLInputElement> {
+export interface SearchProps extends React.InputHTMLAttributes<HTMLInputElement> {
   id?: string;
   name?: string;
   onChangeCallback: (searchTerm: string) => void;
@@ -81,8 +80,8 @@ const Search: React.FC<SearchProps> = ({
   const [searchTerm, setSearchTerm] = useState(value);
 
   useEffect(() => {
-    setSearchTerm(value)
-  }, [value])
+    setSearchTerm(value);
+  }, [value]);
 
   useEffect(() => {
     const debounceTimer = setTimeout(() => {

@@ -95,7 +95,9 @@ const SlideOverFilters: FC<SlideOverFiltersProps> = ({
         : filters[name]?.filter((v) => v.toString() !== value),
     };
     setFilters(newFilters);
-    cb && cb(newFilters);
+    if (cb) {
+      cb(newFilters);
+    }
   };
 
   const handleReset = () => {

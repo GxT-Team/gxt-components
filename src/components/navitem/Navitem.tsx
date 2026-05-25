@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { ComponentType, FC, SVGProps } from "react";
 import {
   NavIcon,
   NavItemContainer,
@@ -9,7 +9,7 @@ import {
 export interface INavItem {
   navigateTo: string;
   text: string;
-  Icon?: React.ComponentType<any>;
+  Icon?: ComponentType<SVGProps<SVGSVGElement>>;
   className?: string;
   onClickHandler?: () => void;
 }
