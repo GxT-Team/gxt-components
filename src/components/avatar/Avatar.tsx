@@ -43,13 +43,13 @@ const Avatar: React.FC<AvatarProps> = ({
     return (firstName?.charAt(0) || "") + (lastPart?.charAt(0) || "");
   }, [firstName, lastName]);
 
-  const noIcon: JSX.Element = (
+  const noIcon: React.ReactElement = (
     <UserInitials data-testid="user-initials" size={size}>
       {userInitials}
     </UserInitials>
   );
 
-  const userIcon: JSX.Element = (
+  const userIcon: React.ReactElement = (
     <UserIcon src={imageUrl || avatar} alt="Avatar" />
   );
 

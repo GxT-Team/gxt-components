@@ -2,7 +2,7 @@ import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import SlideOver from "../SlideOver";
 import Button from "../../button/Button";
-import { useArgs } from "@storybook/preview-api";
+import { useArgs } from "storybook/preview-api";
 
 const meta: Meta<typeof SlideOver> = {
   title: "SlideOver",

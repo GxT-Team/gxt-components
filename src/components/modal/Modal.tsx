@@ -1,5 +1,5 @@
 import { FC, ReactNode } from "react";
-import PropTypes from "prop-types";
+import PropTypes, { Validator } from "prop-types";
 
 import {
   ModalFooter as StyledModalFooter,
@@ -70,7 +70,7 @@ Modal.ModalFooter = StyledModalFooter;
 export default Modal;
 
 Modal.propTypes = {
-  children: PropTypes.node.isRequired as React.Validator<React.ReactNode>,
+  children: PropTypes.node.isRequired as Validator<ReactNode>,
   overlayBackground: PropTypes.string,
   overlay: PropTypes.bool,
   maxWidth: PropTypes.string,
