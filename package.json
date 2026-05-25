@@ -1,9 +1,23 @@
 {
+  "name": "@gloabal-regulatory-writing-consulting/gxt-components",
   "version": "1.1.20",
   "description": "A Component Library",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "files": [
+    "/dist"
+  ],
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@gloabal-regulatory-writing-consulting"
+  },
   "scripts": {
-    "format": "oxfmt --write .",
-    "format:check": "oxfmt --check .",
+    "format": "oxfmt --write '**/*.{ts,tsx}'",
+    "format:check": "oxfmt --check '**/*.{ts,tsx}'",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
     "build": "tsc && vite build",
@@ -14,9 +28,11 @@
     "build-storybook": "storybook build",
     "prepare": "pnpm run build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "react-dropzone": "15.0.0",
+    "react-paginate": "8.3.0",
+    "vite-plugin-svgr": "5.2.0"
+  },
   "devDependencies": {
     "@chromatic-com/storybook": "3.2.7",
     "@storybook/addon-essentials": "8.6.18",
@@ -60,28 +76,12 @@
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "4.60.4"
   },
-  "type": "module",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.es.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "/dist"
-  ],
   "lint-staged": {
-    "*.{ts,tsx,js,jsx,json,jsonc,md,mdx,css,scss,yml,yaml}": [
+    "*.{ts,tsx}": [
       "pnpm run format",
       "pnpm run lint:fix",
       "pnpm run test"
     ]
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@gloabal-regulatory-writing-consulting"
-  },
-  "name": "@gloabal-regulatory-writing-consulting/gxt-components",
-  "dependencies": {
-    "react-dropzone": "15.0.0",
-    "react-paginate": "8.3.0",
-    "vite-plugin-svgr": "5.2.0"
   },
   "packageManager": "pnpm@10.33.3"
 }
