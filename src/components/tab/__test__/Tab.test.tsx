@@ -1,6 +1,7 @@
 import React from "react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
+import "jest-styled-components";
 import Tab from "../Tab";
 
 describe("Tab Component", () => {
@@ -19,10 +20,11 @@ describe("Tab Component", () => {
     render(<Tab title="Tab 1" active={true} onClickHandler={onClickHandler} />);
     const tabElement = screen.getByText("Tab 1");
 
-    expect(tabElement).toHaveStyle(`
-      font-weight: 700;
-      border-bottom: 2px solid var(--primary-200, #177ba6);
-    `);
+    expect(tabElement).toHaveStyleRule("font-weight", "700");
+    expect(tabElement).toHaveStyleRule(
+      "border-bottom",
+      "2px solid var(--primary-200,#177ba6)",
+    );
   });
 
   it("applies inactive styles when active is false", () => {
@@ -31,9 +33,7 @@ describe("Tab Component", () => {
     );
     const tabElement = screen.getByText("Tab 1");
 
-    expect(tabElement).toHaveStyle(`
-      border: none;
-    `);
+    expect(tabElement).toHaveStyleRule("border", "none");
   });
 
   it("calls onClickHandler when clicked", () => {

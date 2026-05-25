@@ -3,6 +3,7 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
 import Navitem, { NavItemProps } from "../Navitem";
 import { describe, expect, it, vi } from "vitest";
+import "jest-styled-components";
 
 const MockIcon = (props: any) => <svg {...props} data-testid="mock-icon" />;
 
@@ -77,9 +78,10 @@ describe("Navitem component", () => {
       route: "/home",
     });
     const navItemContainer = screen.getByTestId("Home").firstChild;
-    expect(navItemContainer).toHaveStyle("border-left: solid");
-    expect(navItemContainer).toHaveStyle(
-      "border-left-color: var(--primary-200, #177BA6)",
+    expect(navItemContainer).toHaveStyleRule("border-left", "solid");
+    expect(navItemContainer).toHaveStyleRule(
+      "border-left-color",
+      "var(--primary-200,#177ba6)",
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -93,7 +95,7 @@ describe("Navitem component", () => {
       },
     );
     const navItemContainer = screen.getByTestId("Home").firstChild;
-    expect(navItemContainer).not.toHaveStyle("border-left: solid");
+    expect(navItemContainer).not.toHaveStyleRule("border-left", "solid");
     expect(asFragment()).toMatchSnapshot();
   });
 

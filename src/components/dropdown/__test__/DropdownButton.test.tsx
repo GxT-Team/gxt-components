@@ -155,7 +155,7 @@ describe("Dropdown component", () => {
     );
 
     const button = screen.getByText("Select an option").parentElement;
-    expect(button).toHaveStyle("border-color: blue");
+    expect(button).toHaveStyle("border-color: rgb(0, 0, 255)");
   });
 
   it("applies custom styles to placeholder", () => {

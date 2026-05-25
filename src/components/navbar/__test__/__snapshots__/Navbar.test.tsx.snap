@@ -3,47 +3,48 @@
 exports[`Navbar Component > renders correctly and matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-cPiJYC iuUwxc"
+    class="sc-krVzYl fRHqJM"
     data-testid="sidebar"
   >
     <div
-      class="sc-jlZhRR jRXYUB"
+      class="sc-crPgjm gVfRrC"
     >
       <div
-        class="sc-jEABJj dyXKlO"
+        class="sc-bqqMSY bezAeB"
       >
         <img
           alt="company logo"
-          class="sc-cwHqhk kQdbWR"
+          class="sc-dYjPD jlEunS"
           data-testid="logo"
           src="http://example.com/thumbnail.jpg"
         />
       </div>
       <div
-        class="sc-dLNtp jQpGFx"
+        class="sc-hCcPtG bRfCpG"
       >
         <div
           data-testid="Content Link 1-navlink"
         >
           <a
-            class="sc-dhKdPU lfdZxK"
+            class="sc-jrIDTr zyWtM"
+            data-discover="true"
             data-testid="Content Link 1"
             data-tooltip-content="Content Link 1"
             data-tooltip-id="navlink"
             href="/user"
           >
             <div
-              class="sc-jXbVAB cVasOk"
+              class="sc-qdQOe hehdnZ"
             >
               <div
-                class="sc-kpDprT swCGl"
+                class="sc-kEbgWM iZoGwS"
               >
                 <span>
                   CL1
                 </span>
               </div>
               <p
-                class="sc-dAlxHm hxthZc"
+                class="sc-iqkkDd eIaeOe"
               >
                 Content Link 1
               </p>
@@ -54,24 +55,25 @@ exports[`Navbar Component > renders correctly and matches snapshot 1`] = `
           data-testid="Content Link 2-navlink"
         >
           <a
-            class="sc-dhKdPU lfdZxK"
+            class="sc-jrIDTr zyWtM"
+            data-discover="true"
             data-testid="Content Link 2"
             data-tooltip-content="Content Link 2"
             data-tooltip-id="navlink"
             href="/user"
           >
             <div
-              class="sc-jXbVAB cVasOk"
+              class="sc-qdQOe hehdnZ"
             >
               <div
-                class="sc-kpDprT swCGl"
+                class="sc-kEbgWM iZoGwS"
               >
                 <span>
                   CL2
                 </span>
               </div>
               <p
-                class="sc-dAlxHm hxthZc"
+                class="sc-iqkkDd eIaeOe"
               >
                 Content Link 2
               </p>
@@ -81,30 +83,31 @@ exports[`Navbar Component > renders correctly and matches snapshot 1`] = `
       </div>
     </div>
     <div
-      class="sc-eDPFhE gQNJRC"
+      class="sc-folSZX jDUOWX"
     >
       <div
         data-testid="Footer Link 1-navlink"
       >
         <a
-          class="sc-dhKdPU lfdZxK"
+          class="sc-jrIDTr zyWtM"
+          data-discover="true"
           data-testid="Footer Link 1"
           data-tooltip-content="Footer Link 1"
           data-tooltip-id="navlink"
           href="/user"
         >
           <div
-            class="sc-jXbVAB cVasOk"
+            class="sc-qdQOe hehdnZ"
           >
             <div
-              class="sc-kpDprT swCGl"
+              class="sc-kEbgWM iZoGwS"
             >
               <span>
                 FL1
               </span>
             </div>
             <p
-              class="sc-dAlxHm hxthZc"
+              class="sc-iqkkDd eIaeOe"
             >
               Footer Link 1
             </p>
@@ -115,24 +118,25 @@ exports[`Navbar Component > renders correctly and matches snapshot 1`] = `
         data-testid="Footer Link 2-navlink"
       >
         <a
-          class="sc-dhKdPU lfdZxK"
+          class="sc-jrIDTr zyWtM"
+          data-discover="true"
           data-testid="Footer Link 2"
           data-tooltip-content="Footer Link 2"
           data-tooltip-id="navlink"
           href="/user"
         >
           <div
-            class="sc-jXbVAB cVasOk"
+            class="sc-qdQOe hehdnZ"
           >
             <div
-              class="sc-kpDprT swCGl"
+              class="sc-kEbgWM iZoGwS"
             >
               <span>
                 FL2
               </span>
             </div>
             <p
-              class="sc-dAlxHm hxthZc"
+              class="sc-iqkkDd eIaeOe"
             >
               Footer Link 2
             </p>
@@ -141,21 +145,21 @@ exports[`Navbar Component > renders correctly and matches snapshot 1`] = `
       </div>
       <span>
         <div
-          class="sc-aYaIB elxlrp false"
+          class="sc-bdDsCe dbdEVx false"
         >
           <div
-            class="sc-gEvDqW KVfas"
+            class="sc-gtcBCx jFqmuA"
             data-testid="avatarIcon"
           >
             <div
-              class="sc-eqUzNf engioi"
+              class="sc-dkXsAU eUWame"
             >
               <div
-                class="sc-fqkwJk dnnfqZ avatar-button"
+                class="sc-hKVpXn gxRjUc avatar-button"
               >
                 <img
                   alt="Avatar"
-                  class="sc-gsFSjX hcoWMc"
+                  class="sc-gKkgUA eTfyyk"
                   src="http://example.com/avatar.jpg"
                 />
               </div>

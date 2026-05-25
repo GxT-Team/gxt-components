@@ -2,19 +2,19 @@
 
 exports[`Dropzone component > should render without errors 1`] = `
 <div
-  class="sc-iGgVNO rLeiI"
+  class="sc-jSppWd ddOgwP"
   data-testid="dropzone"
   role="presentation"
   tabindex="0"
 >
   <input
     multiple=""
-    style="display: none;"
+    style="border: 0px; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(50%); height: 1px; margin: 0px -1px -1px 0px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;"
     tabindex="-1"
     type="file"
   />
   <label
-    class="sc-gsFSjX brWhWZ"
+    class="sc-gKkgUA eIImJx"
   >
     <svg
       class="custom-icon"
@@ -30,12 +30,12 @@ exports[`Dropzone component > should render without errors 1`] = `
       />
     </svg>
     <p
-      class="sc-kAycRU"
+      class="sc-iCECmn"
     >
       Drag and Drop Files
     </p>
     <button
-      class="sc-aYaIB sc-eqUzNf jTlVdY ajZRB"
+      class="sc-bdDsCe sc-dkXsAU fUsyrA cIcRwR"
     >
       or Browse
     </button>

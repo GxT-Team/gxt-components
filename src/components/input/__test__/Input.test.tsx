@@ -69,8 +69,11 @@ describe("Input component", () => {
     const input = screen.getByTestId("input");
     const label = screen.getByTestId("label");
     const helpText = screen.getByText("Error help text");
-    expect(input).toHaveStyle("border-color: var(--negative-200, #7F1D1D)");
-    expect(label).toHaveStyle("color: var(--negative-200, #7F1D1D)");
-    expect(helpText).toHaveStyle("color: var(--negative-200, #7F1D1D)");
+    expect(input).toHaveStyleRule(
+      "border",
+      "1px solid var(--negative-200,#7f1d1d)",
+    );
+    expect(label).toHaveStyleRule("color", "var(--negative-200,#7F1D1D)");
+    expect(helpText).toHaveStyleRule("color", "var(--negative-200,#7F1D1D)");
   });
 });

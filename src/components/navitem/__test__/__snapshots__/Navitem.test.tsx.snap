@@ -1,41 +1,5 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Navitem component > applies active styles when link is active 1`] = `
-<DocumentFragment>
-  <div
-    data-testid="Home-navlink"
-  >
-    <a
-      aria-current="page"
-      class="sc-gEvDqW ixgtyG active"
-      data-testid="Home"
-      data-tooltip-content="Home"
-      data-tooltip-id="navlink"
-      href="/home"
-    >
-      <div
-        class="sc-aYaIB cCERKD"
-      >
-        <div
-          class="sc-eqUzNf kbmWsj"
-        >
-          <svg
-            data-testid="mock-icon"
-            fill="var(--primary-200, #177BA6)"
-            stroke="var(--primary-200, #177BA6)"
-          />
-        </div>
-        <p
-          class="sc-fqkwJk lmZzif"
-        >
-          Home
-        </p>
-      </div>
-    </a>
-  </div>
-</DocumentFragment>
-`;
-
 exports[`Navitem component > applies correct icon color when link is active 1`] = `
 <DocumentFragment>
   <div
@@ -43,17 +7,18 @@ exports[`Navitem component > applies correct icon color when link is active 1`] 
   >
     <a
       aria-current="page"
-      class="sc-gEvDqW ixgtyG active"
+      class="sc-gtcBCx loUDii active"
+      data-discover="true"
       data-testid="Home"
       data-tooltip-content="Home"
       data-tooltip-id="navlink"
       href="/home"
     >
       <div
-        class="sc-aYaIB cCERKD"
+        class="sc-bdDsCe iWngPQ"
       >
         <div
-          class="sc-eqUzNf kbmWsj"
+          class="sc-dkXsAU bkqkcD"
         >
           <svg
             data-testid="mock-icon"
@@ -62,7 +27,7 @@ exports[`Navitem component > applies correct icon color when link is active 1`] 
           />
         </div>
         <p
-          class="sc-fqkwJk lmZzif"
+          class="sc-hKVpXn kLOHKk"
         >
           Home
         </p>
@@ -78,24 +43,25 @@ exports[`Navitem component > applies correct icon color when link is not active 
     data-testid="Home-navlink"
   >
     <a
-      class="sc-gEvDqW ixgtyG"
+      class="sc-gtcBCx loUDii"
+      data-discover="true"
       data-testid="Home"
       data-tooltip-content="Home"
       data-tooltip-id="navlink"
       href="/home"
     >
       <div
-        class="sc-aYaIB cExATB"
+        class="sc-bdDsCe hyrtou"
       >
         <div
-          class="sc-eqUzNf kbmWsj"
+          class="sc-dkXsAU bkqkcD"
         >
           <svg
             data-testid="mock-icon"
           />
         </div>
         <p
-          class="sc-fqkwJk fFtWrx"
+          class="sc-hKVpXn ejjrDG"
         >
           Home
         </p>
@@ -111,24 +77,25 @@ exports[`Navitem component > does not apply active styles when link is not activ
     data-testid="Home-navlink"
   >
     <a
-      class="sc-gEvDqW ixgtyG"
+      class="sc-gtcBCx loUDii"
+      data-discover="true"
       data-testid="Home"
       data-tooltip-content="Home"
       data-tooltip-id="navlink"
       href="/home"
     >
       <div
-        class="sc-aYaIB cExATB"
+        class="sc-bdDsCe hyrtou"
       >
         <div
-          class="sc-eqUzNf kbmWsj"
+          class="sc-dkXsAU bkqkcD"
         >
           <svg
             data-testid="mock-icon"
           />
         </div>
         <p
-          class="sc-fqkwJk fFtWrx"
+          class="sc-hKVpXn ejjrDG"
         >
           Home
         </p>
@@ -144,17 +111,18 @@ exports[`Navitem component > does not render expanded text when isExpanded is fa
     data-testid="Home-navlink"
   >
     <a
-      class="sc-gEvDqW ixgtyG"
+      class="sc-gtcBCx loUDii"
+      data-discover="true"
       data-testid="Home"
       data-tooltip-content="Home"
       data-tooltip-id="navlink"
       href="/home"
     >
       <div
-        class="sc-aYaIB cCERKD"
+        class="sc-bdDsCe iWngPQ"
       >
         <div
-          class="sc-eqUzNf kbmWsj"
+          class="sc-dkXsAU bkqkcD"
         >
           <svg
             data-testid="mock-icon"
@@ -163,7 +131,7 @@ exports[`Navitem component > does not render expanded text when isExpanded is fa
           />
         </div>
         <p
-          class="sc-fqkwJk fDjqbC"
+          class="sc-hKVpXn jTciuF"
         >
           Home
         </p>
@@ -179,20 +147,21 @@ exports[`Navitem component > does not render icon when not provided 1`] = `
     data-testid="Home-navlink"
   >
     <a
-      class="sc-gEvDqW ixgtyG"
+      class="sc-gtcBCx loUDii"
+      data-discover="true"
       data-testid="Home"
       data-tooltip-content="Home"
       data-tooltip-id="navlink"
       href="/home"
     >
       <div
-        class="sc-aYaIB cCERKD"
+        class="sc-bdDsCe iWngPQ"
       >
         <div
-          class="sc-eqUzNf kbmWsj"
+          class="sc-dkXsAU bkqkcD"
         />
         <p
-          class="sc-fqkwJk lmZzif"
+          class="sc-hKVpXn kLOHKk"
         >
           Home
         </p>
@@ -208,17 +177,18 @@ exports[`Navitem component > renders expanded text when isExpanded is true 1`] =
     data-testid="Home-navlink"
   >
     <a
-      class="sc-gEvDqW ixgtyG"
+      class="sc-gtcBCx loUDii"
+      data-discover="true"
       data-testid="Home"
       data-tooltip-content="Home"
       data-tooltip-id="navlink"
       href="/home"
     >
       <div
-        class="sc-aYaIB cCERKD"
+        class="sc-bdDsCe iWngPQ"
       >
         <div
-          class="sc-eqUzNf kbmWsj"
+          class="sc-dkXsAU bkqkcD"
         >
           <svg
             data-testid="mock-icon"
@@ -227,7 +197,7 @@ exports[`Navitem component > renders expanded text when isExpanded is true 1`] =
           />
         </div>
         <p
-          class="sc-fqkwJk lmZzif"
+          class="sc-hKVpXn kLOHKk"
         >
           Home
         </p>
@@ -243,17 +213,18 @@ exports[`Navitem component > renders icon when provided 1`] = `
     data-testid="Home-navlink"
   >
     <a
-      class="sc-gEvDqW ixgtyG"
+      class="sc-gtcBCx loUDii"
+      data-discover="true"
       data-testid="Home"
       data-tooltip-content="Home"
       data-tooltip-id="navlink"
       href="/home"
     >
       <div
-        class="sc-aYaIB cCERKD"
+        class="sc-bdDsCe iWngPQ"
       >
         <div
-          class="sc-eqUzNf kbmWsj"
+          class="sc-dkXsAU bkqkcD"
         >
           <svg
             data-testid="mock-icon"
@@ -262,7 +233,7 @@ exports[`Navitem component > renders icon when provided 1`] = `
           />
         </div>
         <p
-          class="sc-fqkwJk lmZzif"
+          class="sc-hKVpXn kLOHKk"
         >
           Home
         </p>
@@ -278,17 +249,18 @@ exports[`Navitem component > renders with correct text 1`] = `
     data-testid="Home-navlink"
   >
     <a
-      class="sc-gEvDqW ixgtyG"
+      class="sc-gtcBCx loUDii"
+      data-discover="true"
       data-testid="Home"
       data-tooltip-content="Home"
       data-tooltip-id="navlink"
       href="/home"
     >
       <div
-        class="sc-aYaIB cCERKD"
+        class="sc-bdDsCe iWngPQ"
       >
         <div
-          class="sc-eqUzNf kbmWsj"
+          class="sc-dkXsAU bkqkcD"
         >
           <svg
             data-testid="mock-icon"
@@ -297,7 +269,7 @@ exports[`Navitem component > renders with correct text 1`] = `
           />
         </div>
         <p
-          class="sc-fqkwJk lmZzif"
+          class="sc-hKVpXn kLOHKk"
         >
           Home
         </p>
@@ -313,17 +285,18 @@ exports[`Navitem component > renders without crashing 1`] = `
     data-testid="Home-navlink"
   >
     <a
-      class="sc-gEvDqW ixgtyG"
+      class="sc-gtcBCx loUDii"
+      data-discover="true"
       data-testid="Home"
       data-tooltip-content="Home"
       data-tooltip-id="navlink"
       href="/home"
     >
       <div
-        class="sc-aYaIB cCERKD"
+        class="sc-bdDsCe iWngPQ"
       >
         <div
-          class="sc-eqUzNf kbmWsj"
+          class="sc-dkXsAU bkqkcD"
         >
           <svg
             data-testid="mock-icon"
@@ -332,7 +305,7 @@ exports[`Navitem component > renders without crashing 1`] = `
           />
         </div>
         <p
-          class="sc-fqkwJk lmZzif"
+          class="sc-hKVpXn kLOHKk"
         >
           Home
         </p>
